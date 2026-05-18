@@ -1,6 +1,6 @@
 set project_name "ldlt"
-set project_dir "/local/data1/ollha42/ldlt-matrix-inverse-implementation/python/ldlt_sweep/runs/20260327_181537/mads_N16_mult_f300MHz_latA9_latM6_latF16_latR19_mads2/synth"
-set vhdl_dir "/local/data1/ollha42/ldlt-matrix-inverse-implementation/python/ldlt_sweep/runs/20260327_181537/mads_N16_mult_f300MHz_latA9_latM6_latF16_latR19_mads2/vhdl"
+set project_dir "../synth"
+set vhdl_dir "../vhdl"
 set gui false
 set jobs 4
 set period 3.333
@@ -16,4 +16,4 @@ set fp_addsub_mult_usage {No_Usage}
 set fp_mul_mult_usage {Max_Usage}
 set fp_fma_mult_usage {Medium_Usage}
 set fp_rec_mult_usage {Full_Usage}
-source "/local/data1/ollha42/ldlt-matrix-inverse-implementation/synth/vivado_synth_design.tcl"
+source "../../../vivado_synth_design.tcl"

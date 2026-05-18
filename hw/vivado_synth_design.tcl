@@ -7,8 +7,8 @@ if {![info exists jobs]}         { set jobs 12 }
 # Define synthesis parameters
 if {![info exists out_of_context]} { set out_of_context true }
 if {![info exists preserve_hierarchy]} { set preserve_hierarchy false }
-# if {![info exists part_number]}      { set part_number "xc7z007sclg225-2" }
-if {![info exists part_number]}      { set part_number "xc7vx690tffg1930-3" }
+if {![info exists part_number]}      { set part_number "xc7z007sclg225-2" }
+# if {![info exists part_number]}      { set part_number "xc7vx690tffg1930-3" }
 if {![info exists clock_name]}       { set clock_name "clk" }
 if {![info exists period]}           { set period 10.0 }
 if {![info exists vhdl_dir]}         { set vhdl_dir "../vhdl/$project_dir" }
