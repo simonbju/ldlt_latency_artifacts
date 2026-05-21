@@ -2,6 +2,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+use ieee.float_pkg.all;
 use std.env.all;
 
 entity tb is
@@ -2583,7 +2584,8 @@ begin
         wait until falling_edge(clk);
 
         -- Cycle 378
-        assert out0_0_out = "00111111100001101000100111101000";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (1.0510835647583008)) <= 0.0 + 1.0e-06 * abs(1.0510835647583008)
+            report "Error detected at cycle 378: out0_0_out expected 1.0510835647583008, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 379
@@ -2731,143 +2733,178 @@ begin
         wait until falling_edge(clk);
 
         -- Cycle 427
-        assert out0_0_out = "00111111011100010000100111011011";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (0.9415566325187683)) <= 0.0 + 1.0e-06 * abs(0.9415566325187683)
+            report "Error detected at cycle 427: out0_0_out expected 0.9415566325187683, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 428
-        assert out0_0_out = "10111110100000001110010110011111";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (-0.2517518699169159)) <= 0.0 + 1.0e-06 * abs(-0.2517518699169159)
+            report "Error detected at cycle 428: out0_0_out expected -0.2517518699169159, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 429
-        assert out0_0_out = "10111101000010111111100010100001";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (-0.16755735874176025)) <= 0.0 + 1.0e-06 * abs(-0.16755735874176025)
+            report "Error detected at cycle 429: out0_0_out expected -0.16755735874176025, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 430
-        assert out0_0_out = "10111111010001010000111101011011";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (-0.02810475043952465)) <= 0.0 + 1.0e-06 * abs(-0.02810475043952465)
+            report "Error detected at cycle 430: out0_0_out expected -0.02810475043952465, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 431
-        assert out0_0_out = "10111110001010111001010000101000";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (0.8987186551094055)) <= 0.0 + 1.0e-06 * abs(0.8987186551094055)
+            report "Error detected at cycle 431: out0_0_out expected 0.8987186551094055, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 432
-        assert out0_0_out = "00111110000011110111010101101100";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (0.17301534116268158)) <= 0.0 + 1.0e-06 * abs(0.17301534116268158)
+            report "Error detected at cycle 432: out0_0_out expected 0.17301534116268158, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 433
-        assert out0_0_out = "10111111001111001110101010010111";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (0.015931103378534317)) <= 0.0 + 1.0e-06 * abs(0.015931103378534317)
+            report "Error detected at cycle 433: out0_0_out expected 0.015931103378534317, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 434
-        assert out0_0_out = "00111110001100010010101011101111";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (-0.7379545569419861)) <= 0.0 + 1.0e-06 * abs(-0.7379545569419861)
+            report "Error detected at cycle 434: out0_0_out expected -0.7379545569419861, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 435
-        assert out0_0_out = "00111111011001100001001001101101";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (0.14009636640548706)) <= 0.0 + 1.0e-06 * abs(0.14009636640548706)
+            report "Error detected at cycle 435: out0_0_out expected 0.14009636640548706, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 436
-        assert out0_0_out = "00111111100000110111100000110011";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (-0.06526713073253632)) <= 0.0 + 1.0e-06 * abs(-0.06526713073253632)
+            report "Error detected at cycle 436: out0_0_out expected -0.06526713073253632, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 437
-        assert out0_0_out = "01000000100001001110101101000100";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (-0.7697655558586121)) <= 0.0 + 1.0e-06 * abs(-0.7697655558586121)
+            report "Error detected at cycle 437: out0_0_out expected -0.7697655558586121, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 438
-        assert out0_0_out = "10111100111001100011101111101111";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (-0.0341726578772068)) <= 0.0 + 1.0e-06 * abs(-0.0341726578772068)
+            report "Error detected at cycle 438: out0_0_out expected -0.0341726578772068, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 439
-        assert out0_0_out = "10111101100001011010101011000110";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (0.024414032697677612)) <= 0.0 + 1.0e-06 * abs(0.024414032697677612)
+            report "Error detected at cycle 439: out0_0_out expected 0.024414032697677612, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 440
-        assert out0_0_out = "00111100100000101000000111110010";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (0.9863976240158081)) <= 0.0 + 1.0e-06 * abs(0.9863976240158081)
+            report "Error detected at cycle 440: out0_0_out expected 0.9863976240158081, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 441
-        assert out0_0_out = "00111100110001111111111111110000";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (4.153718948364258)) <= 0.0 + 1.0e-06 * abs(4.153718948364258)
+            report "Error detected at cycle 441: out0_0_out expected 4.153718948364258, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 442
-        assert out0_0_out = "10111110101000000111011100011000";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (-0.31340861320495605)) <= 0.0 + 1.0e-06 * abs(-0.31340861320495605)
+            report "Error detected at cycle 442: out0_0_out expected -0.31340861320495605, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 443
-        assert out0_0_out = "00111111100010000101100111011001";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (3.329749584197998)) <= 0.0 + 1.0e-06 * abs(3.329749584197998)
+            report "Error detected at cycle 443: out0_0_out expected 3.329749584197998, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 444
-        assert out0_0_out = "10111111100010110110100111001100";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (-2.737523317337036)) <= 0.0 + 1.0e-06 * abs(-2.737523317337036)
+            report "Error detected at cycle 444: out0_0_out expected -2.737523317337036, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 445
-        assert out0_0_out = "01000000011000111001101011101101";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (-0.7976441383361816)) <= 0.0 + 1.0e-06 * abs(-0.7976441383361816)
+            report "Error detected at cycle 445: out0_0_out expected -0.7976441383361816, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 446
-        assert out0_0_out = "11000000010001010001100100011001";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (2.395599603652954)) <= 0.0 + 1.0e-06 * abs(2.395599603652954)
+            report "Error detected at cycle 446: out0_0_out expected 2.395599603652954, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 447
-        assert out0_0_out = "10111111001000101101101000001010";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (-0.8248156905174255)) <= 0.0 + 1.0e-06 * abs(-0.8248156905174255)
+            report "Error detected at cycle 447: out0_0_out expected -0.8248156905174255, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 448
-        assert out0_0_out = "00111111010101001100110010001011";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (0.8312460780143738)) <= 0.0 + 1.0e-06 * abs(0.8312460780143738)
+            report "Error detected at cycle 448: out0_0_out expected 0.8312460780143738, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 449
-        assert out0_0_out = "00111101100000100001110000111000";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (0.4503380060195923)) <= 0.0 + 1.0e-06 * abs(0.4503380060195923)
+            report "Error detected at cycle 449: out0_0_out expected 0.4503380060195923, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 450
-        assert out0_0_out = "00111110111001101001001010110100";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (0.06353038549423218)) <= 0.0 + 1.0e-06 * abs(0.06353038549423218)
+            report "Error detected at cycle 450: out0_0_out expected 0.06353038549423218, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 451
-        assert out0_0_out = "10111111010100110010011100011111";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (-0.6361395120620728)) <= 0.0 + 1.0e-06 * abs(-0.6361395120620728)
+            report "Error detected at cycle 451: out0_0_out expected -0.6361395120620728, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 452
-        assert out0_0_out = "01000000010101010001101010011110";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (3.556330919265747)) <= 0.0 + 1.0e-06 * abs(3.556330919265747)
+            report "Error detected at cycle 452: out0_0_out expected 3.556330919265747, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 453
-        assert out0_0_out = "01000000000110010101000110000001";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (-3.0796568393707275)) <= 0.0 + 1.0e-06 * abs(-3.0796568393707275)
+            report "Error detected at cycle 453: out0_0_out expected -3.0796568393707275, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 454
-        assert out0_0_out = "10111111010011000011001001101000";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (-1.0891661643981934)) <= 0.0 + 1.0e-06 * abs(-1.0891661643981934)
+            report "Error detected at cycle 454: out0_0_out expected -1.0891661643981934, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 455
-        assert out0_0_out = "11000000001011110011001110010101";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (1.0652419328689575)) <= 0.0 + 1.0e-06 * abs(1.0652419328689575)
+            report "Error detected at cycle 455: out0_0_out expected 1.0652419328689575, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 456
-        assert out0_0_out = "10111111001101010010100111111101";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (1.027105689048767)) <= 0.0 + 1.0e-06 * abs(1.027105689048767)
+            report "Error detected at cycle 456: out0_0_out expected 1.027105689048767, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 457
-        assert out0_0_out = "00111111011111001000010010001110";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (-0.7076719403266907)) <= 0.0 + 1.0e-06 * abs(-0.7076719403266907)
+            report "Error detected at cycle 457: out0_0_out expected -0.7076719403266907, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 458
-        assert out0_0_out = "00111110100000000010111100100101";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (0.2503596842288971)) <= 0.0 + 1.0e-06 * abs(0.2503596842288971)
+            report "Error detected at cycle 458: out0_0_out expected 0.2503596842288971, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 459
-        assert out0_0_out = "10111111001111000100111010111100";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (-0.7355763912200928)) <= 0.0 + 1.0e-06 * abs(-0.7355763912200928)
+            report "Error detected at cycle 459: out0_0_out expected -0.7355763912200928, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 460
-        assert out0_0_out = "00111110011100111001100100101100";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (0.23788899183273315)) <= 0.0 + 1.0e-06 * abs(0.23788899183273315)
+            report "Error detected at cycle 460: out0_0_out expected 0.23788899183273315, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         -- Cycle 461
-        assert out0_0_out = "00111110011000001001001010011001";
+        assert abs(to_real(to_float(out0_0_out, 8, 23)) - (0.2193092256784439)) <= 0.0 + 1.0e-06 * abs(0.2193092256784439)
+            report "Error detected at cycle 461: out0_0_out expected 0.2193092256784439, got " & real'image(to_real(to_float(out0_0_out, 8, 23))) severity failure;
         wait until falling_edge(clk);
 
         report "SUCCESS: All assertions passed" severity note;

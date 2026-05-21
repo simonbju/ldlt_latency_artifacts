@@ -125,13 +125,8 @@ export_ip_user_files -of_objects [get_ips] -no_script -sync -force -quiet
 # Add design sources
 set all_vhdl_sources [glob -nocomplain [file join $vhdl_dir *.vhdl]]
 set vhdl_sources [lsearch -all -inline -not $all_vhdl_sources *tb.vhdl]
-set vhdl_tb_sources [lsearch -all -inline $all_vhdl_sources *tb.vhdl]
 if {[llength $vhdl_sources] == 0} {
   error "No VHDL sources found in $vhdl_dir"
-}
-add_files $vhdl_sources
-if {[llength $vhdl_tb_sources] > 0} {
-  add_files -fileset sim_1 $vhdl_tb_sources
 }
 
 set synth_run synth_1

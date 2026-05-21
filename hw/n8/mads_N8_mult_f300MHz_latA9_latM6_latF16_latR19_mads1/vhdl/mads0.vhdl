@@ -69,6 +69,8 @@ architecture rtl of mads0 is
     signal mul_result_reg : std_logic_vector(31 downto 0);
     signal res_quant_0 : std_logic_vector(31 downto 0);
     signal res_overflow_0 : std_logic_vector(31 downto 0);
+    signal is_add2 : std_logic;
+    signal do_addsub2 : std_logic;
 
 begin
     process(clk)
@@ -81,6 +83,8 @@ begin
                 p_2_in_reg_0 <= p_2_in;
                 is_add <= is_add_comb;
                 do_addsub <= do_addsub_comb;
+                is_add2 <= is_add;
+                do_addsub2 <= do_addsub;
             end if;
         end if;
     end process;
@@ -834,8 +838,8 @@ begin
             m_axis_result_tdata => mul_result,
             m_axis_result_tvalid => mul_result_tvalid_unused
         );
-    addsub_a <= (others => '0') when do_addsub = '0' else op_0;
-    addsub_op <= "0000000" & (not is_add and do_addsub);
+    addsub_a <= (others => '0') when do_addsub2 = '0' else op_0;
+    addsub_op <= "0000000" & (not is_add2 and do_addsub2);
     process(clk)
     begin
         if rising_edge(clk) then

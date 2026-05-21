@@ -1,7 +1,7 @@
 set project_name "ldlt"
 set project_dir "../synth"
 set vhdl_dir "../vhdl"
-set gui false
+set gui true
 set jobs 4
 set period 3.333
 set needed_ips {fp_addsub fp_mul fp_rec}

@@ -3525,6 +3525,10 @@ begin
                 when "10000110001" =>
                     read_adr_0_0_0 <= to_unsigned(0, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
+                -- FIX
+                when "10000110011" =>
+                    read_adr_0_0_0 <= to_unsigned(12, read_adr_0_0_0'length);
+                    read_en_0_0_0 <= '1';
                 when others =>
                     read_adr_0_0_0 <= (others => '-');
                     read_en_0_0_0 <= '0';

@@ -993,6 +993,10 @@ begin
                 when "100011100" =>
                     read_adr_0_0_0 <= to_unsigned(4, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
+                -- TODO: manually added, last entry missing
+                when "100011101" =>
+                    read_adr_0_0_0 <= to_unsigned(3, read_adr_0_0_0'length);
+                    read_en_0_0_0 <= '1';
                 when others =>
                     read_adr_0_0_0 <= (others => '-');
                     read_en_0_0_0 <= '0';

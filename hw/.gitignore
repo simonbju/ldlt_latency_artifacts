@@ -1,0 +1,7 @@
+**/synth/*
+!**/synth/run_sim.tcl
+!**/synth/run_synth.tcl
+last_fix/
+mads-fix/
+mads-fix-simple/
+tb_gen.py

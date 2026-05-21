@@ -6440,6 +6440,10 @@ begin
                 when "10000101000" =>
                     read_adr_0_0_0 <= to_unsigned(0, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
+                -- FIX
+                when "10000101001" =>
+                    read_adr_0_0_0 <= to_unsigned(4, read_adr_0_0_0'length);
+                    read_en_0_0_0 <= '1';
                 when others =>
                     read_adr_0_0_0 <= (others => '-');
                     read_en_0_0_0 <= '0';

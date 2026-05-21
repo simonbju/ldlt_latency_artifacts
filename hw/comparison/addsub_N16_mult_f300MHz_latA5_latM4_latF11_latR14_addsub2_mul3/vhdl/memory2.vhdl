@@ -5995,6 +5995,9 @@ begin
                 when "10000010101" =>
                     read_adr_0_0_0 <= to_unsigned(6, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
+                when "10000101010" => -- FIX for last
+                    read_adr_0_0_0 <= to_unsigned(3, read_adr_0_0_0'length);
+                    read_en_0_0_0 <= '1';
                 when others =>
                     read_adr_0_0_0 <= (others => '-');
                     read_en_0_0_0 <= '0';
