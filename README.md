@@ -8,7 +8,7 @@ AMD Vivado 2023.2 and Floating-Point Operator v7.1 are required to run these des
 
 The folder `hw` contains subfolders with all VHDL code and scripts for different matrix sizes, e.g., `n4` contains designs for 4x4 matrix inversion.
 
-Each subfolder contains different designs. Each design folder contains two subfolders: `synth` with `.tcl` scripts for simulation and synthesis, and `vhdl` with the source code and testbench.
+Each subfolder contains different designs. Each design folder contains two subfolders: `synth` with `.tcl` scripts for simulation and synthesis, and `vhdl` with source code for the design and testbench.
 
 The directory name describes the parameters for each design. For example, `separate_N4_mult_f200MHz_addsub1_mul1` means:
 
@@ -41,3 +41,5 @@ vivado -mode batch -script run_synth.tcl
 ```
 
 Reports for area, timing, and power will be generated in the same folder for each implementation strategy specified in the synthesis script.
+Note that for some designs, the timing is only met for some strategies.
+As can be seen in the paper, 16x16 designs targeting 300 MHz clock frequency does not meet timing.
