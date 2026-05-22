@@ -128,6 +128,7 @@ set vhdl_sources [lsearch -all -inline -not $all_vhdl_sources *tb.vhdl]
 if {[llength $vhdl_sources] == 0} {
   error "No VHDL sources found in $vhdl_dir"
 }
+add_files $vhdl_sources
 
 set synth_run synth_1
 

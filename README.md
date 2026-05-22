@@ -31,6 +31,7 @@ vivado -mode batch -script run_sim.tcl
 
 After the Vivado window has opened, press "Run All".
 After some initial setup time, the second part of the simulation shows a complete matrix inversion.
+The input data arrives in lower triangular row-major order. The output data are produced in an order according to the schedule.
 
 ## Synthesis
 
