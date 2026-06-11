@@ -1,0 +1,16 @@
+[project]
+name = "ldlt-latency-artifacts"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "b-asic",
+    "ipykernel>=7.2.0",
+    "numpy>=2.4.6",
+    "pandas>=3.0.3",
+    "pulp>=3.3.2",
+]
+
+[tool.uv.sources]
+b-asic = { git = "https://github.com/b-asic-eda/b-asic.git" }
