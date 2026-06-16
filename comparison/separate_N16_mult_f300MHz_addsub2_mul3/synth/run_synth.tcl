@@ -1,6 +1,6 @@
 set project_name "ldlt"
-set project_dir "/local/data1/ldlt-matrix-inverse-implementation/python/ldlt_sweep/runs/20260608_100810/addsub_N16_mult_f300MHz_latA5_latM4_latF16_latR14_addsub2_mul3/synth"
-set vhdl_dir "/local/data1/ldlt-matrix-inverse-implementation/python/ldlt_sweep/runs/20260608_100810/addsub_N16_mult_f300MHz_latA5_latM4_latF16_latR14_addsub2_mul3/vhdl"
+set project_dir "../synth"
+set vhdl_dir "../vhdl"
 set gui false
 set jobs 3
 set period 3.333
@@ -16,4 +16,4 @@ set fp_addsub_mult_usage {No_Usage}
 set fp_mul_mult_usage {Max_Usage}
 set fp_fma_mult_usage {Medium_Usage}
 set fp_rec_mult_usage {Full_Usage}
-source "/local/data1/ldlt-matrix-inverse-implementation/synth/vivado_synth_design.tcl"
+source "../../../vivado_synth_design.tcl"
