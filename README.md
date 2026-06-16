@@ -2,11 +2,9 @@
 
 AMD Vivado 2023.2 and Floating-Point Operator v7.1 are required to run these designs. They may work with other versions, but are only tested with these.
 
-### &#9888; Simulations for Combined are currently not working correctly, but the problem is fixed locally and updated files will be provided before final submission.
-
 ## File structure
 
-The folder `hw` contains subfolders with all VHDL code and scripts for different matrix sizes, e.g., `n4` contains designs for 4x4 matrix inversion.
+The repository contains subfolders with all VHDL code and scripts for different matrix sizes, e.g., `n4` contains designs for 4x4 matrix inversion.
 
 Each subfolder contains different designs. Each design folder contains two subfolders: `synth` with `.tcl` scripts for simulation and synthesis, and `vhdl` with source code for the design and testbench.
 
@@ -43,4 +41,4 @@ vivado -mode batch -script run_synth.tcl
 
 Reports for area, timing, and power will be generated in the same folder for each implementation strategy specified in the synthesis script.
 Note that for some designs, the timing is only met for some strategies.
-As can be seen in the paper, 16x16 designs targeting 300 MHz clock frequency does not meet timing.
+As can be seen in the paper, 16x16 designs targeting 300 MHz clock frequency does not meet timing, constraint file is included for fmax.
