@@ -104,23 +104,23 @@ begin
     mem_write_address_proc: process(schedule_cnt)
     begin
             case schedule_cnt is
-                -- MemoryVariable(1, <b_asic.port.OutputPort object at 0x7fae92fbdc50>, {<b_asic.port.InputPort object at 0x7fae92fbf0e0>: 12, <b_asic.port.InputPort object at 0x7fae92fe4670>: 16}, 'in1.0')
+                -- MemoryVariable(1, <.port.OutputPort object at 0x7fae92fbdc50>, {<.port.InputPort object at 0x7fae92fbf0e0>: 12, <.port.InputPort object at 0x7fae92fe4670>: 16}, 'in1.0')
                 when "0000000" =>
                     write_adr_0_0_0 <= to_unsigned(0, write_adr_0_0_0'length);
                     write_en_0_0_0 <= '1';
-                -- MemoryVariable(6, <b_asic.port.OutputPort object at 0x7fae92fbe200>, {<b_asic.port.InputPort object at 0x7fae92fbf460>: 8, <b_asic.port.InputPort object at 0x7fae92fd7850>: 12, <b_asic.port.InputPort object at 0x7fae92fd7a80>: 13, <b_asic.port.InputPort object at 0x7fae92fd7e70>: 13}, 'in6.0')
+                -- MemoryVariable(6, <.port.OutputPort object at 0x7fae92fbe200>, {<.port.InputPort object at 0x7fae92fbf460>: 8, <.port.InputPort object at 0x7fae92fd7850>: 12, <.port.InputPort object at 0x7fae92fd7a80>: 13, <.port.InputPort object at 0x7fae92fd7e70>: 13}, 'in6.0')
                 when "0000101" =>
                     write_adr_0_0_0 <= to_unsigned(1, write_adr_0_0_0'length);
                     write_en_0_0_0 <= '1';
-                -- MemoryVariable(29, <b_asic.port.OutputPort object at 0x7fae92fd5cc0>, {<b_asic.port.InputPort object at 0x7fae92fd59b0>: 14, <b_asic.port.InputPort object at 0x7fae92fd6cf0>: 10, <b_asic.port.InputPort object at 0x7fae92fd7230>: 15}, 'addsub17.0')
+                -- MemoryVariable(29, <.port.OutputPort object at 0x7fae92fd5cc0>, {<.port.InputPort object at 0x7fae92fd59b0>: 14, <.port.InputPort object at 0x7fae92fd6cf0>: 10, <.port.InputPort object at 0x7fae92fd7230>: 15}, 'addsub17.0')
                 when "0011100" =>
                     write_adr_0_0_0 <= to_unsigned(0, write_adr_0_0_0'length);
                     write_en_0_0_0 <= '1';
-                -- MemoryVariable(44, <b_asic.port.OutputPort object at 0x7fae92fd2ac0>, {<b_asic.port.InputPort object at 0x7fae92fd2820>: 22, <b_asic.port.InputPort object at 0x7fae92fd2c10>: 27, <b_asic.port.InputPort object at 0x7fae92fe4210>: 26, <b_asic.port.InputPort object at 0x7fae92fd2660>: 23, <b_asic.port.InputPort object at 0x7fae92fd1470>: 21}, 'neg2.0')
+                -- MemoryVariable(44, <.port.OutputPort object at 0x7fae92fd2ac0>, {<.port.InputPort object at 0x7fae92fd2820>: 22, <.port.InputPort object at 0x7fae92fd2c10>: 27, <.port.InputPort object at 0x7fae92fe4210>: 26, <.port.InputPort object at 0x7fae92fd2660>: 23, <.port.InputPort object at 0x7fae92fd1470>: 21}, 'neg2.0')
                 when "0101011" =>
                     write_adr_0_0_0 <= to_unsigned(0, write_adr_0_0_0'length);
                     write_en_0_0_0 <= '1';
-                -- MemoryVariable(70, <b_asic.port.OutputPort object at 0x7fae92fd4280>, {<b_asic.port.InputPort object at 0x7fae92fd3d90>: 22, <b_asic.port.InputPort object at 0x7fae92fd4ad0>: 23, <b_asic.port.InputPort object at 0x7fae92fd4910>: 23, <b_asic.port.InputPort object at 0x7fae92fd4fa0>: 27, <b_asic.port.InputPort object at 0x7fae92fd46e0>: 28}, 'neg4.0')
+                -- MemoryVariable(70, <.port.OutputPort object at 0x7fae92fd4280>, {<.port.InputPort object at 0x7fae92fd3d90>: 22, <.port.InputPort object at 0x7fae92fd4ad0>: 23, <.port.InputPort object at 0x7fae92fd4910>: 23, <.port.InputPort object at 0x7fae92fd4fa0>: 27, <.port.InputPort object at 0x7fae92fd46e0>: 28}, 'neg4.0')
                 when "1000101" =>
                     write_adr_0_0_0 <= to_unsigned(1, write_adr_0_0_0'length);
                     write_en_0_0_0 <= '1';
@@ -137,71 +137,71 @@ begin
     mem_read_address_proc: process(schedule_cnt)
     begin
             case schedule_cnt is
-                -- MemoryVariable(1, <b_asic.port.OutputPort object at 0x7fae92fbdc50>, {<b_asic.port.InputPort object at 0x7fae92fbf0e0>: 12, <b_asic.port.InputPort object at 0x7fae92fe4670>: 16}, 'in1.0')
+                -- MemoryVariable(1, <.port.OutputPort object at 0x7fae92fbdc50>, {<.port.InputPort object at 0x7fae92fbf0e0>: 12, <.port.InputPort object at 0x7fae92fe4670>: 16}, 'in1.0')
                 when "0001011" =>
                     read_adr_0_0_0 <= to_unsigned(0, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
-                -- MemoryVariable(6, <b_asic.port.OutputPort object at 0x7fae92fbe200>, {<b_asic.port.InputPort object at 0x7fae92fbf460>: 8, <b_asic.port.InputPort object at 0x7fae92fd7850>: 12, <b_asic.port.InputPort object at 0x7fae92fd7a80>: 13, <b_asic.port.InputPort object at 0x7fae92fd7e70>: 13}, 'in6.0')
+                -- MemoryVariable(6, <.port.OutputPort object at 0x7fae92fbe200>, {<.port.InputPort object at 0x7fae92fbf460>: 8, <.port.InputPort object at 0x7fae92fd7850>: 12, <.port.InputPort object at 0x7fae92fd7a80>: 13, <.port.InputPort object at 0x7fae92fd7e70>: 13}, 'in6.0')
                 when "0001100" =>
                     read_adr_0_0_0 <= to_unsigned(1, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
-                -- MemoryVariable(1, <b_asic.port.OutputPort object at 0x7fae92fbdc50>, {<b_asic.port.InputPort object at 0x7fae92fbf0e0>: 12, <b_asic.port.InputPort object at 0x7fae92fe4670>: 16}, 'in1.0')
+                -- MemoryVariable(1, <.port.OutputPort object at 0x7fae92fbdc50>, {<.port.InputPort object at 0x7fae92fbf0e0>: 12, <.port.InputPort object at 0x7fae92fe4670>: 16}, 'in1.0')
                 when "0001111" =>
                     read_adr_0_0_0 <= to_unsigned(0, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
-                -- MemoryVariable(6, <b_asic.port.OutputPort object at 0x7fae92fbe200>, {<b_asic.port.InputPort object at 0x7fae92fbf460>: 8, <b_asic.port.InputPort object at 0x7fae92fd7850>: 12, <b_asic.port.InputPort object at 0x7fae92fd7a80>: 13, <b_asic.port.InputPort object at 0x7fae92fd7e70>: 13}, 'in6.0')
+                -- MemoryVariable(6, <.port.OutputPort object at 0x7fae92fbe200>, {<.port.InputPort object at 0x7fae92fbf460>: 8, <.port.InputPort object at 0x7fae92fd7850>: 12, <.port.InputPort object at 0x7fae92fd7a80>: 13, <.port.InputPort object at 0x7fae92fd7e70>: 13}, 'in6.0')
                 when "0010000" =>
                     read_adr_0_0_0 <= to_unsigned(1, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
-                -- MemoryVariable(6, <b_asic.port.OutputPort object at 0x7fae92fbe200>, {<b_asic.port.InputPort object at 0x7fae92fbf460>: 8, <b_asic.port.InputPort object at 0x7fae92fd7850>: 12, <b_asic.port.InputPort object at 0x7fae92fd7a80>: 13, <b_asic.port.InputPort object at 0x7fae92fd7e70>: 13}, 'in6.0')
+                -- MemoryVariable(6, <.port.OutputPort object at 0x7fae92fbe200>, {<.port.InputPort object at 0x7fae92fbf460>: 8, <.port.InputPort object at 0x7fae92fd7850>: 12, <.port.InputPort object at 0x7fae92fd7a80>: 13, <.port.InputPort object at 0x7fae92fd7e70>: 13}, 'in6.0')
                 when "0010001" =>
                     read_adr_0_0_0 <= to_unsigned(1, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
-                -- MemoryVariable(29, <b_asic.port.OutputPort object at 0x7fae92fd5cc0>, {<b_asic.port.InputPort object at 0x7fae92fd59b0>: 14, <b_asic.port.InputPort object at 0x7fae92fd6cf0>: 10, <b_asic.port.InputPort object at 0x7fae92fd7230>: 15}, 'addsub17.0')
+                -- MemoryVariable(29, <.port.OutputPort object at 0x7fae92fd5cc0>, {<.port.InputPort object at 0x7fae92fd59b0>: 14, <.port.InputPort object at 0x7fae92fd6cf0>: 10, <.port.InputPort object at 0x7fae92fd7230>: 15}, 'addsub17.0')
                 when "0100101" =>
                     read_adr_0_0_0 <= to_unsigned(0, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
-                -- MemoryVariable(29, <b_asic.port.OutputPort object at 0x7fae92fd5cc0>, {<b_asic.port.InputPort object at 0x7fae92fd59b0>: 14, <b_asic.port.InputPort object at 0x7fae92fd6cf0>: 10, <b_asic.port.InputPort object at 0x7fae92fd7230>: 15}, 'addsub17.0')
+                -- MemoryVariable(29, <.port.OutputPort object at 0x7fae92fd5cc0>, {<.port.InputPort object at 0x7fae92fd59b0>: 14, <.port.InputPort object at 0x7fae92fd6cf0>: 10, <.port.InputPort object at 0x7fae92fd7230>: 15}, 'addsub17.0')
                 when "0101001" =>
                     read_adr_0_0_0 <= to_unsigned(0, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
-                -- MemoryVariable(29, <b_asic.port.OutputPort object at 0x7fae92fd5cc0>, {<b_asic.port.InputPort object at 0x7fae92fd59b0>: 14, <b_asic.port.InputPort object at 0x7fae92fd6cf0>: 10, <b_asic.port.InputPort object at 0x7fae92fd7230>: 15}, 'addsub17.0')
+                -- MemoryVariable(29, <.port.OutputPort object at 0x7fae92fd5cc0>, {<.port.InputPort object at 0x7fae92fd59b0>: 14, <.port.InputPort object at 0x7fae92fd6cf0>: 10, <.port.InputPort object at 0x7fae92fd7230>: 15}, 'addsub17.0')
                 when "0101010" =>
                     read_adr_0_0_0 <= to_unsigned(0, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
-                -- MemoryVariable(44, <b_asic.port.OutputPort object at 0x7fae92fd2ac0>, {<b_asic.port.InputPort object at 0x7fae92fd2820>: 22, <b_asic.port.InputPort object at 0x7fae92fd2c10>: 27, <b_asic.port.InputPort object at 0x7fae92fe4210>: 26, <b_asic.port.InputPort object at 0x7fae92fd2660>: 23, <b_asic.port.InputPort object at 0x7fae92fd1470>: 21}, 'neg2.0')
+                -- MemoryVariable(44, <.port.OutputPort object at 0x7fae92fd2ac0>, {<.port.InputPort object at 0x7fae92fd2820>: 22, <.port.InputPort object at 0x7fae92fd2c10>: 27, <.port.InputPort object at 0x7fae92fe4210>: 26, <.port.InputPort object at 0x7fae92fd2660>: 23, <.port.InputPort object at 0x7fae92fd1470>: 21}, 'neg2.0')
                 when "0111111" =>
                     read_adr_0_0_0 <= to_unsigned(0, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
-                -- MemoryVariable(44, <b_asic.port.OutputPort object at 0x7fae92fd2ac0>, {<b_asic.port.InputPort object at 0x7fae92fd2820>: 22, <b_asic.port.InputPort object at 0x7fae92fd2c10>: 27, <b_asic.port.InputPort object at 0x7fae92fe4210>: 26, <b_asic.port.InputPort object at 0x7fae92fd2660>: 23, <b_asic.port.InputPort object at 0x7fae92fd1470>: 21}, 'neg2.0')
+                -- MemoryVariable(44, <.port.OutputPort object at 0x7fae92fd2ac0>, {<.port.InputPort object at 0x7fae92fd2820>: 22, <.port.InputPort object at 0x7fae92fd2c10>: 27, <.port.InputPort object at 0x7fae92fe4210>: 26, <.port.InputPort object at 0x7fae92fd2660>: 23, <.port.InputPort object at 0x7fae92fd1470>: 21}, 'neg2.0')
                 when "1000000" =>
                     read_adr_0_0_0 <= to_unsigned(0, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
-                -- MemoryVariable(44, <b_asic.port.OutputPort object at 0x7fae92fd2ac0>, {<b_asic.port.InputPort object at 0x7fae92fd2820>: 22, <b_asic.port.InputPort object at 0x7fae92fd2c10>: 27, <b_asic.port.InputPort object at 0x7fae92fe4210>: 26, <b_asic.port.InputPort object at 0x7fae92fd2660>: 23, <b_asic.port.InputPort object at 0x7fae92fd1470>: 21}, 'neg2.0')
+                -- MemoryVariable(44, <.port.OutputPort object at 0x7fae92fd2ac0>, {<.port.InputPort object at 0x7fae92fd2820>: 22, <.port.InputPort object at 0x7fae92fd2c10>: 27, <.port.InputPort object at 0x7fae92fe4210>: 26, <.port.InputPort object at 0x7fae92fd2660>: 23, <.port.InputPort object at 0x7fae92fd1470>: 21}, 'neg2.0')
                 when "1000001" =>
                     read_adr_0_0_0 <= to_unsigned(0, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
-                -- MemoryVariable(44, <b_asic.port.OutputPort object at 0x7fae92fd2ac0>, {<b_asic.port.InputPort object at 0x7fae92fd2820>: 22, <b_asic.port.InputPort object at 0x7fae92fd2c10>: 27, <b_asic.port.InputPort object at 0x7fae92fe4210>: 26, <b_asic.port.InputPort object at 0x7fae92fd2660>: 23, <b_asic.port.InputPort object at 0x7fae92fd1470>: 21}, 'neg2.0')
+                -- MemoryVariable(44, <.port.OutputPort object at 0x7fae92fd2ac0>, {<.port.InputPort object at 0x7fae92fd2820>: 22, <.port.InputPort object at 0x7fae92fd2c10>: 27, <.port.InputPort object at 0x7fae92fe4210>: 26, <.port.InputPort object at 0x7fae92fd2660>: 23, <.port.InputPort object at 0x7fae92fd1470>: 21}, 'neg2.0')
                 when "1000100" =>
                     read_adr_0_0_0 <= to_unsigned(0, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
-                -- MemoryVariable(44, <b_asic.port.OutputPort object at 0x7fae92fd2ac0>, {<b_asic.port.InputPort object at 0x7fae92fd2820>: 22, <b_asic.port.InputPort object at 0x7fae92fd2c10>: 27, <b_asic.port.InputPort object at 0x7fae92fe4210>: 26, <b_asic.port.InputPort object at 0x7fae92fd2660>: 23, <b_asic.port.InputPort object at 0x7fae92fd1470>: 21}, 'neg2.0')
+                -- MemoryVariable(44, <.port.OutputPort object at 0x7fae92fd2ac0>, {<.port.InputPort object at 0x7fae92fd2820>: 22, <.port.InputPort object at 0x7fae92fd2c10>: 27, <.port.InputPort object at 0x7fae92fe4210>: 26, <.port.InputPort object at 0x7fae92fd2660>: 23, <.port.InputPort object at 0x7fae92fd1470>: 21}, 'neg2.0')
                 when "1000101" =>
                     read_adr_0_0_0 <= to_unsigned(0, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
-                -- MemoryVariable(70, <b_asic.port.OutputPort object at 0x7fae92fd4280>, {<b_asic.port.InputPort object at 0x7fae92fd3d90>: 22, <b_asic.port.InputPort object at 0x7fae92fd4ad0>: 23, <b_asic.port.InputPort object at 0x7fae92fd4910>: 23, <b_asic.port.InputPort object at 0x7fae92fd4fa0>: 27, <b_asic.port.InputPort object at 0x7fae92fd46e0>: 28}, 'neg4.0')
+                -- MemoryVariable(70, <.port.OutputPort object at 0x7fae92fd4280>, {<.port.InputPort object at 0x7fae92fd3d90>: 22, <.port.InputPort object at 0x7fae92fd4ad0>: 23, <.port.InputPort object at 0x7fae92fd4910>: 23, <.port.InputPort object at 0x7fae92fd4fa0>: 27, <.port.InputPort object at 0x7fae92fd46e0>: 28}, 'neg4.0')
                 when "1011010" =>
                     read_adr_0_0_0 <= to_unsigned(1, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
-                -- MemoryVariable(70, <b_asic.port.OutputPort object at 0x7fae92fd4280>, {<b_asic.port.InputPort object at 0x7fae92fd3d90>: 22, <b_asic.port.InputPort object at 0x7fae92fd4ad0>: 23, <b_asic.port.InputPort object at 0x7fae92fd4910>: 23, <b_asic.port.InputPort object at 0x7fae92fd4fa0>: 27, <b_asic.port.InputPort object at 0x7fae92fd46e0>: 28}, 'neg4.0')
+                -- MemoryVariable(70, <.port.OutputPort object at 0x7fae92fd4280>, {<.port.InputPort object at 0x7fae92fd3d90>: 22, <.port.InputPort object at 0x7fae92fd4ad0>: 23, <.port.InputPort object at 0x7fae92fd4910>: 23, <.port.InputPort object at 0x7fae92fd4fa0>: 27, <.port.InputPort object at 0x7fae92fd46e0>: 28}, 'neg4.0')
                 when "1011011" =>
                     read_adr_0_0_0 <= to_unsigned(1, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
-                -- MemoryVariable(70, <b_asic.port.OutputPort object at 0x7fae92fd4280>, {<b_asic.port.InputPort object at 0x7fae92fd3d90>: 22, <b_asic.port.InputPort object at 0x7fae92fd4ad0>: 23, <b_asic.port.InputPort object at 0x7fae92fd4910>: 23, <b_asic.port.InputPort object at 0x7fae92fd4fa0>: 27, <b_asic.port.InputPort object at 0x7fae92fd46e0>: 28}, 'neg4.0')
+                -- MemoryVariable(70, <.port.OutputPort object at 0x7fae92fd4280>, {<.port.InputPort object at 0x7fae92fd3d90>: 22, <.port.InputPort object at 0x7fae92fd4ad0>: 23, <.port.InputPort object at 0x7fae92fd4910>: 23, <.port.InputPort object at 0x7fae92fd4fa0>: 27, <.port.InputPort object at 0x7fae92fd46e0>: 28}, 'neg4.0')
                 when "1011111" =>
                     read_adr_0_0_0 <= to_unsigned(1, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
-                -- MemoryVariable(70, <b_asic.port.OutputPort object at 0x7fae92fd4280>, {<b_asic.port.InputPort object at 0x7fae92fd3d90>: 22, <b_asic.port.InputPort object at 0x7fae92fd4ad0>: 23, <b_asic.port.InputPort object at 0x7fae92fd4910>: 23, <b_asic.port.InputPort object at 0x7fae92fd4fa0>: 27, <b_asic.port.InputPort object at 0x7fae92fd46e0>: 28}, 'neg4.0')
+                -- MemoryVariable(70, <.port.OutputPort object at 0x7fae92fd4280>, {<.port.InputPort object at 0x7fae92fd3d90>: 22, <.port.InputPort object at 0x7fae92fd4ad0>: 23, <.port.InputPort object at 0x7fae92fd4910>: 23, <.port.InputPort object at 0x7fae92fd4fa0>: 27, <.port.InputPort object at 0x7fae92fd46e0>: 28}, 'neg4.0')
                 when "1100000" =>
                     read_adr_0_0_0 <= to_unsigned(1, read_adr_0_0_0'length);
                     read_en_0_0_0 <= '1';
